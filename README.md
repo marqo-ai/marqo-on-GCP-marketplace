@@ -103,6 +103,9 @@ Configure `kubectl` to connect to the new cluster:
 ```shell
 gcloud container clusters get-credentials "$CLUSTER"
 ```
+#### Google Cloud Quota
+
+Ensure you have enough quota to be able to provision the node pools below, the documentation for quotas in Google Kubernetes Engine can be [found here](https://cloud.google.com/kubernetes-engine/quotas). The same principle applies if you are seeking GPU-based Marqo instances, please refer to the [GPU documentation for Google Kubernetes Engine](https://cloud.google.com/kubernetes-engine/docs/concepts/gpus) for provisioning GPU enabled machine instances. You may seek to use the [reservation system](https://cloud.google.com/compute/docs/instances/reservations-overview) to ensure you have the quota required.
 
 #### Create the GKE node pools
 
