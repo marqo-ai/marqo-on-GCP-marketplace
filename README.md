@@ -135,7 +135,7 @@ gcloud container node-pools create marqo-nodes --cluster "$CLUSTER" --machine-ty
 
 # GPU enabled
 # Uncommend and run this command in order to provision a GPU-accelerated machine instance type.
-# gcloud container node-pools create marqo-nodes --accelerator type=nvidia-tesla-t4,count=1 --cluster "$CLUSTER" --machine-type n1-standard-2 --disk-type pd-standard --disk-size=100 --num-nodes 1
+# gcloud container node-pools create marqo-nodes --accelerator type=nvidia-tesla-t4,count=1,gpu-driver-version=latest --cluster "$CLUSTER" --machine-type n1-standard-4 --disk-type pd-standard --disk-size=100 --num-nodes 1
 ```
 
 #### Delete the default node pool
