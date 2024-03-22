@@ -127,7 +127,7 @@ gcloud container node-pools create vespa-feed-nodes --cluster "$CLUSTER" --machi
 
 gcloud container node-pools create vespa-query-nodes --cluster "$CLUSTER" --machine-type n1-standard-2 --disk-type pd-standard --disk-size=20 --num-nodes 1
 
-gcloud container node-pools create vespa-content-nodes --cluster "$CLUSTER" --machine-type n1-standard-2 --disk-type pd-standard --disk-size=20 --num-nodes 1
+gcloud container node-pools create vespa-content-nodes --cluster "$CLUSTER" --machine-type n1-standard-2 --disk-type pd-standard --disk-size=20 --num-nodes 2
 
 # Non-GPU enabled Marqo
 # Alternatively, if you would like to make use of GPU-acceleration, uncommment and run the alternate command
